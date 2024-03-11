@@ -1,0 +1,6 @@
+﻿directory,file_name,variable_name,variable_type,description
+data-raw,washinvestments.rda,id,,A running id for each entry.
+data-raw,washinvestments.rda,mdb,,Name of the multilateral development bank.
+data-raw,washinvestments.rda,project_name,,Name of the investment project.
+data-raw,washinvestments.rda,region,,Classification of region under ?
+data-raw,washinvestments.rda,multi_country,,Was this a multi country investment project?
