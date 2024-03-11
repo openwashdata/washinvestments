@@ -1,0 +1,40 @@
+# -----------------------------------------------------------
+# CITATION file created with {cffr} R package, v0.5.0
+# See also: https://docs.ropensci.org/cffr/
+# -----------------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "washinvestments" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'washinvestments: Multilateral development banks investment behaviour in water
+  and sanitation'
+version: 0.0.0.9000
+abstract: Dataset on multilateral development bank (MDB) investment in water supply
+  and sanitation between 1960 and 2020. The data is drawing on 3,639 water and sanitation
+  projects to assess territorial trends, technology choices, distribution of financial
+  burdens, and reforms to institutional arrangements.
+authors:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+date-released: '2024-03-11'
+contact:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  location:
+    name: Vienna, Austria
+  year: '2024'
+  institution:
+    name: R Foundation for Statistical Computing
+  version: '>= 2.10'
