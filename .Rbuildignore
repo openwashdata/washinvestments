@@ -4,3 +4,6 @@
 ^LICENSE\.md$
 ^CITATION\.cff$
 ^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
