@@ -13,6 +13,13 @@ washinvestments <- data_in |>
   clean_names() |>
   glimpse()
 
+washinvestments |>
+  count(region)
+
+washinvestments |>
+  count(multi_country)
+
+
 # export data -------------------------------------------------------------
 
 ## code to prepare `DATASET` dataset goes here
