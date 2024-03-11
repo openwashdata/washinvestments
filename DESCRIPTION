@@ -1,15 +1,21 @@
 Package: washinvestments
-Title: What the Package Does (One Line, Title Case)
+Title: Multilateral development banks investment behaviour in water and 
+    sanitation
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-2196-5015"))
+Description: Dataset on multilateral development bank (MDB) investment in water 
+    supply and sanitation between 1960 and 2020. The data is drawing on 3,639 
+    water and sanitation projects to assess territorial trends, technology 
+    choices, distribution of financial burdens, and reforms to institutional 
+    arrangements.
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 LazyData: true
+Language: en-GB
+Date: 2024-03-11
