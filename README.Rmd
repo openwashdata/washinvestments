@@ -1,0 +1,89 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+
+library(tidyverse)
+library(epoxy)
+library(washinvestments)
+```
+
+# washinvestments
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of washinvestments is to ...
+
+## Installation
+
+You can install the development version of washinvestments from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/washinvestments")
+```
+
+## Project goal
+
+TODO
+
+## Data
+
+TODO
+
+The package provides access to one data set.
+
+```{r, echo = TRUE}
+library(washinvestments)
+```
+
+The `washinvestments` data set has `r ncol(washinvestments)`
+variables and `r nrow(washinvestments)` observations. For an overview
+of the variable names, see the following table.
+
+```{r, eval=FALSE}
+washinvestments
+```
+
+```{r, echo=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |> 
+  dplyr::filter(file_name == "washinvestments.rda") |> 
+  dplyr::select(variable_name:description) |> 
+  knitr::kable()
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(washinvestments)
+## basic example code
+```
+
+## License
+
+Data are available as 
+[CC-BY](https://github.com/openwashdata/washinvestments/LICENSE.md).
+
+## Citation
+
+To cite this package, please use:
+
+```{r}
+citation("washinvestments")
+```
