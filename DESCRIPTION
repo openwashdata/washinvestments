@@ -2,11 +2,16 @@ Package: washinvestments
 Title: Multilateral development banks investment behaviour in water and 
     sanitation
 Version: 0.0.0.9000
-Authors@R: 
-    person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0003-2196-5015"))
+Authors@R:c(
+    person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0002-2567-3343")),
+    person("Andri", "Heidler", , role = "aut", comment = c(ORCID = "0000-0003-2138-4675")),
+    person("Muhil", "Nesi", , role = "aut"),
+    person("Josiane", "Nikiema", , role = "aut", comment = c(ORCID = "0000-0001-8802-0564")),
+    person("Christoph", "Lüthi", , role = "aut")
+           )
 Description: Dataset on multilateral development bank (MDB) investment in water 
-    supply and sanitation between 1960 and 2020. The data is drawing on 3,639 
+    supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 
     water and sanitation projects to assess territorial trends, technology 
     choices, distribution of financial burdens, and reforms to institutional 
     arrangements.
