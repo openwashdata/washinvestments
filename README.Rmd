@@ -64,7 +64,7 @@ read_csv("data-raw/dictionary.csv") |>
 
 ## Project goal
 
-'Multilateral development banks (MDBs) play a pivotal role in financing water and sanitation infrastructure projects and thus have a major
+"Multilateral development banks (MDBs) play a pivotal role in financing water and sanitation infrastructure projects and thus have a major
 impact on the development of basic services. Although information about the MDBs’ investments is publicly available, it is dispersed and
 not easily comparable. A comprehensive compilation of MDBs’ water and sanitation investments has long been lacking. To address this
 gap, we assess water and sanitation financing by the three MDBs most relevant to Africa and Asia between 1960 and 2020: the World
@@ -72,7 +72,7 @@ Bank, the African Development Bank, and the Asian Development Bank. We compile a
 projects and assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements. We
 find that MDBs’ investments align with changing patterns of urbanization and increasingly finance sanitation infrastructures including
 non-sewered technologies. However, our results also suggest that institutional reforms have addressed utility efficiency through investment
-in equipment and skills rather than through increased commercialization and private sector participation. The leverage effect of MDB investment on private financing is negligible, whereas co-financing from local governments dominates' [@heidler2023multilateral].
+in equipment and skills rather than through increased commercialization and private sector participation. The leverage effect of MDB investment on private financing is negligible, whereas co-financing from local governments dominates" [@heidler2023multilateral].
 
 ## Data
 

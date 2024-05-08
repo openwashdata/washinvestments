@@ -38,7 +38,7 @@ the table below.
 
 ## Project goal
 
-‘Multilateral development banks (MDBs) play a pivotal role in financing
+“Multilateral development banks (MDBs) play a pivotal role in financing
 water and sanitation infrastructure projects and thus have a major
 impact on the development of basic services. Although information about
 the MDBs’ investments is publicly available, it is dispersed and not
@@ -57,7 +57,7 @@ reforms have addressed utility efficiency through investment in
 equipment and skills rather than through increased commercialization and
 private sector participation. The leverage effect of MDB investment on
 private financing is negligible, whereas co-financing from local
-governments dominates’ (Heidler et al. 2023).
+governments dominates” (Heidler et al. 2023).
 
 ## Data
 
@@ -139,18 +139,18 @@ To cite this package, please use:
 citation("washinvestments")
 #> To cite package 'washinvestments' in publications use:
 #> 
-#>   Schöbitz L (2024). _washinvestments: Multilateral development banks
-#>   investment behaviour in water and sanitation_. R package version
-#>   0.0.0.9000.
+#>   Götschmann M, Heidler A, Nesi M, Nikiema J, Lüthi C (2024).
+#>   "washinvestments: Multilateral development banks investment behaviour
+#>   in water and sanitation."
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
-#>     title = {washinvestments: Multilateral development banks investment behaviour in water and
-#> sanitation},
-#>     author = {Lars Schöbitz},
+#>   @Misc{gotschmann_etall:2024,
+#>     title = {washinvestments: Multilateral development banks investment behaviour in water and sanitation},
+#>     author = {Margaux Götschmann and Andri Heidler and Muhil Nesi and Josiane Nikiema and Christoph Lüthi},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     abstract = {Dataset on multilateral development bank (MDB) investment in water supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 water and sanitation projects to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements.},
+#>     version = {0.0.0.9000},
 #>   }
 ```
 
