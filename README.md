@@ -7,17 +7,10 @@
 <!-- badges: end -->
 
 The goal of washinvestments is to provide users documentation on the
-newly created data set published alongside the article “Multilateral
-development banks investment behaviour in water and sanitation: Findings
-and lessons from 60 years of investment projects in Africa and Asia”
-(Heidler et al. 2023). This data set was compiled by drawing on 3,639
-water and sanitation projects and assess territorial trends, technology
-choices, distribution of financial burdens, and reforms to institutional
-arrangements to assess the investment behaviour of the World Bank, ADB,
-and AfDB in water supply and sanitation from their first operations in
-the 1960s until 2020 and distil how they responded to trends in
-urbanization and the policy debates about governing access to basic
-services.
+data set published alongside the article “Multilateral development banks
+investment behaviour in water and sanitation: Findings and lessons from
+60 years of investment projects in Africa and Asia” (Heidler et al.
+2023).
 
 ## Installation
 
@@ -38,35 +31,23 @@ the table below.
 
 ## Project goal
 
-“Multilateral development banks (MDBs) play a pivotal role in financing
-water and sanitation infrastructure projects and thus have a major
-impact on the development of basic services. Although information about
-the MDBs’ investments is publicly available, it is dispersed and not
-easily comparable. A comprehensive compilation of MDBs’ water and
-sanitation investments has long been lacking. To address this gap, we
-assess water and sanitation financing by the three MDBs most relevant to
-Africa and Asia between 1960 and 2020: the World Bank, the African
-Development Bank, and the Asian Development Bank. We compile a new
-dataset by drawing on 3,639 water and sanitation projects and assess
-territorial trends, technology choices, distribution of financial
-burdens, and reforms to institutional arrangements. We find that MDBs’
-investments align with changing patterns of urbanization and
-increasingly finance sanitation infrastructures including non-sewered
-technologies. However, our results also suggest that institutional
-reforms have addressed utility efficiency through investment in
-equipment and skills rather than through increased commercialization and
-private sector participation. The leverage effect of MDB investment on
-private financing is negligible, whereas co-financing from local
-governments dominates” (Heidler et al. 2023).
+Multilateral development banks (MDBs) significantly influence water and
+sanitation infrastructure development. However, data on their
+investments is dispersed and hard to compare. This project presents a
+new data set compiled by drawing on 3,639 water and sanitation projects
+that aims at assessing “territorial trends, technology choices,
+distribution of financial burdens, and reforms to institutional
+arrangements to analyze the investment behaviour of the World Bank, ADB,
+and AfDB in water supply and sanitation from their first operations in
+the 1960s until 2020 and distil how they responded to trends in
+urbanization and the policy debates about governing access to basic
+services.” (Heidler et al. 2023)
 
 ## Data
 
 The data set includes information about water and sanitation projects
-conducted in Africa and Asia between 1960 and 2020.
-
-![]()
-
-The package provides access to one data set.
+conducted in Africa and Asia between 1960 and 2020. The package provides
+access to one data set.
 
 ``` r
 library(washinvestments)
@@ -122,9 +103,87 @@ washinvestments
 | er2                        | logical       | Indicates whether institutional reforms address private sector service providers and aim to incentivise them to enter the sanitation economy or regulate their activities: TRUE = reforms to regulate sanitation service providers are financed, FALSE = no reforms to regulate sanitation service providers are financed, NA = for all entries that were not coded under Subset 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | er3                        | logical       | Indicates whether institutional reforms address households or communities and aim to increase awareness of and demand for non-sewered sanitation solutions or to set up service co-production arrangements: TRUE = reforms to create demand and awareness for sanitation are financed, FALSE = no reforms to create demand and awareness for sanitation are financed, NA = for all entries that were not coded under Subset 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-## Example
+## Example: Investment trends in Africa and Asia over 60 years
 
-This is a basic example which shows you how to solve a common problem:
+Here is a basic example demonstrating how to address a common problem:
+analyzing the evolution of financing in the WASH sector over 60 years.
+We focus on the continents mentioned in the paper: Africa and Asia. The
+first plot below illustrates the number of investment projects financed
+in the WASH sector from 1960 to 2020. It is evident that a higher number
+of projects in Asia have secured financing. Furthermore, there is a
+noticeable upward trend in the number of investment projects over the
+years, reaching its peak in 2009. In a second place, we display the
+investment trends in Asia over 60 years, focusing on different regions
+within the continent. The third plot displays the investment trends in
+Africa over 60 years, focusing on different regions within the
+continent.
+
+![](man/figures/africa_asia.png) ![](man/figures/asia.png)
+![](man/figures/africa.png)
+
+``` r
+library(washinvestments)
+library(ggplot2)
+library(countrycode)
+library(dplyr)
+
+washinvestments_asia_africa <- washinvestments |>
+  mutate(continent = countrycode(iso_country_code, "iso3c", "continent")) |> 
+  filter(continent %in% c("Africa", "Asia"))
+continent_counts <- washinvestments_asia_africa |> 
+  group_by(continent) |> 
+  summarise(count = n()) |> 
+  arrange(desc(count))
+washinvestments_asia_africa$continent <- factor(washinvestments_asia_africa$continent, levels = continent_counts$continent)
+
+washinvestments_asia <- washinvestments |>
+  mutate(continent = countrycode(iso_country_code, "iso3c", "continent")) |> 
+  filter(region %in% c("Central Asia", "Eastern Asia", "Polynesia", "South-eastern Asia", "Southern Asia", "Western Asia"))
+asia_counts <- washinvestments_asia |> 
+  group_by(region) |> 
+  summarise(count = n()) |> 
+  arrange(desc(count))
+washinvestments_asia$region <- factor(washinvestments_asia$region, levels = asia_counts$region)
+
+washinvestments_africa <- washinvestments |>
+  mutate(continent = countrycode(iso_country_code, "iso3c", "continent")) |> 
+  filter(region %in% c("Northern Africa", "Eastern Africa", "Middle Africa", "Western Africa", "Southern Africa"))
+africa_counts <- washinvestments_africa |> 
+  group_by(region) |> 
+  summarise(count = n()) |> 
+  arrange(desc(count))
+washinvestments_africa$region <- factor(washinvestments_africa$region, levels = africa_counts$region)
+
+ggplot(washinvestments_asia_africa, aes(x = year, fill = continent)) +
+  geom_bar() +
+  scale_x_discrete(breaks = seq(1960, 2020, 10)) +
+  labs(title = "Investment trends in Africa and Asia",
+       x = "Year",
+       y = "Number of investment projects",
+       fill = "Continent") +
+  scale_fill_brewer(palette = "Set2") +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", color = "#333333"))
+
+ggplot(washinvestments_asia, aes(x = year, fill = region)) +
+  geom_bar() +
+  scale_x_discrete(breaks = seq(1960, 2020, 10)) +
+  labs(title = "Investment trends in Asia",
+       x = "Year",
+       y = "Number of investment projects",
+       fill = "Region") +
+  scale_fill_brewer(palette = "Set2") +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", color = "#333333"))
+
+ggplot(washinvestments_africa, aes(x = year, fill = region)) +
+  geom_bar() +
+  scale_x_discrete(breaks = seq(1960, 2020, 10)) +
+  labs(title = "Investment trends in Africa",
+       x = "Year",
+       y = "Number of investment projects",
+       fill = "Region") +
+  scale_fill_brewer(palette = "Set2") +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", color = "#333333"))
+```
 
 ## License
 
