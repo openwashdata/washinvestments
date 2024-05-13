@@ -126,7 +126,7 @@ library(washinvestments)
 library(ggplot2)
 library(countrycode)
 library(dplyr)
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 # Add a new column for continent information
 washinvestments <- washinvestments |> 
   mutate(continent = countrycode(iso_country_code, "iso3c", "continent"))
@@ -143,7 +143,7 @@ continent_counts <- washinvestments_asia_africa |>
 
 # Encode the continent column as factor with chosen levels for plotting
 washinvestments_asia_africa$continent <- factor(washinvestments_asia_africa$continent, levels = continent_counts$continent)
------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 # Filter the data set for Asia
 washinvestments_asia <- washinvestments |>
   filter(region %in% c("Central Asia", "Eastern Asia", "Polynesia", "South-eastern Asia", "Southern Asia", "Western Asia"))
@@ -156,7 +156,7 @@ asia_counts <- washinvestments_asia |>
 
 # Encode the region column as factor with chosen levels for plotting
 washinvestments_asia$region <- factor(washinvestments_asia$region, levels = asia_counts$region)
-------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 # Filter the data set for Africa
 washinvestments_africa <- washinvestments |>
   filter(region %in% c("Northern Africa", "Eastern Africa", "Middle Africa", "Western Africa", "Southern Africa"))
@@ -169,7 +169,7 @@ africa_counts <- washinvestments_africa |>
 
 # Encode the region column as factor with chosen levels for plotting
 washinvestments_africa$region <- factor(washinvestments_africa$region, levels = africa_counts$region)
---------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
 # Create bar plots of investment trends
 ggplot(washinvestments_asia_africa, aes(x = year, fill = continent)) +
   geom_bar() +
