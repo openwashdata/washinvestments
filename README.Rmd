@@ -126,45 +126,51 @@ library(washinvestments)
 library(ggplot2)
 library(countrycode)
 library(dplyr)
-
-# Add a new column for continents
+----------------------------------------------------------------------------------------------------
+# Add a new column for continent information
 washinvestments <- washinvestments |> 
   mutate(continent = countrycode(iso_country_code, "iso3c", "continent"))
 
-# Filter the data set by continent
+# Filter the data for Africa and Asia
 washinvestments_asia_africa <- washinvestments |> 
   filter(continent %in% c("Africa", "Asia"))
-# Count the number of projects per continent and arrange it in descending order for plotting
+
+# Count the number of projects per continent and arrange it in descending order
 continent_counts <- washinvestments_asia_africa |> 
   group_by(continent) |> 
   summarise(count = n()) |> 
   arrange(desc(count))
-# Encode the continent column as factor for plotting
-washinvestments_asia_africa$continent <- factor(washinvestments_asia_africa$continent, levels = continent_counts$continent)
 
-# Filter the data set by region in Asia
+# Encode the continent column as factor with chosen levels for plotting
+washinvestments_asia_africa$continent <- factor(washinvestments_asia_africa$continent, levels = continent_counts$continent)
+-----------------------------------------------------------------------------------------------------
+# Filter the data set for Asia
 washinvestments_asia <- washinvestments |>
   filter(region %in% c("Central Asia", "Eastern Asia", "Polynesia", "South-eastern Asia", "Southern Asia", "Western Asia"))
-# Count the number of projects per region and arrange it in descending order for plotting
+
+# Count the number of projects per region and arrange it in descending order
 asia_counts <- washinvestments_asia |> 
   group_by(region) |> 
   summarise(count = n()) |> 
   arrange(desc(count))
-# Encode the region column as factor for plotting
-washinvestments_asia$region <- factor(washinvestments_asia$region, levels = asia_counts$region)
 
-# Filter the data set by region in Africa
+# Encode the region column as factor with chosen levels for plotting
+washinvestments_asia$region <- factor(washinvestments_asia$region, levels = asia_counts$region)
+------------------------------------------------------------------------------------------------------
+# Filter the data set for Africa
 washinvestments_africa <- washinvestments |>
   filter(region %in% c("Northern Africa", "Eastern Africa", "Middle Africa", "Western Africa", "Southern Africa"))
-# Count the number of projects per region and arrange it in descending order for plotting
+
+# Count the number of projects per region and arrange it in descending order
 africa_counts <- washinvestments_africa |> 
   group_by(region) |> 
   summarise(count = n()) |> 
   arrange(desc(count))
-# Encode the region column as factor for plotting
-washinvestments_africa$region <- factor(washinvestments_africa$region, levels = africa_counts$region)
 
-# Create bar plots for each of the scenarios
+# Encode the region column as factor with chosen levels for plotting
+washinvestments_africa$region <- factor(washinvestments_africa$region, levels = africa_counts$region)
+--------------------------------------------------------------------------------------------------------
+# Create bar plots of investment trends
 ggplot(washinvestments_asia_africa, aes(x = year, fill = continent)) +
   geom_bar() +
   scale_x_discrete(breaks = seq(1960, 2020, 10)) +
