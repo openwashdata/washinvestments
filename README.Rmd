@@ -61,7 +61,7 @@ read_csv("data-raw/dictionary.csv") |>
   dplyr::rename(dataset = file_name) |> 
   mutate(
     CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
-    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, "_utf8.xlsx)")
   ) |> 
   knitr::kable()
 

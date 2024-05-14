@@ -25,9 +25,9 @@ devtools::install_github("openwashdata/washinvestments")
 Alternatively, you can download the dataset as a CSV or XLSX file from
 the table below.
 
-| dataset         | CSV                                                                                                       | XLSX                                                                                                        |
-|:----------------|:----------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| washinvestments | [Download CSV](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments.csv) | [Download XLSX](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments.xlsx) |
+| dataset         | CSV                                                                                                       | XLSX                                                                                                             |
+|:----------------|:----------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
+| washinvestments | [Download CSV](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments.csv) | [Download XLSX](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments_utf8.xlsx) |
 
 ## Project goal
 
