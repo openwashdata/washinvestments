@@ -18,12 +18,8 @@ data_in <- read_csv("data-raw/wash-dev-mdb_20221223_data.csv") |>
   as_tibble()
 
 # Tidy data ---------------------------------------------------------------
-# Remove non-UTF8 entries
-cctu::detect_invalid_utf8(data_in)
-data <- cctu::remove_invalid_utf8(data_in)
-
 # Adjust variables' names
-washinvestments <- data |>
+washinvestments <- data_in |>
   clean_names()
 
 # Modify variables' types
@@ -34,4 +30,7 @@ washinvestments <- washinvestments |>
 usethis::use_data(washinvestments, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata"))
 write_csv(washinvestments, here::here("inst", "extdata", "washinvestments.csv"))
-openxlsx::write.xlsx(washinvestments, here::here("inst", "extdata", "washinvestments.xlsx"))
+# Remove non-UTF8 entries
+cctu::detect_invalid_utf8(washinvestments)
+washinvestments_utf8 <- cctu::remove_invalid_utf8(washinvestments)
+openxlsx::write.xlsx(washinvestments_utf8, here::here("inst", "extdata", "washinvestments_utf8.xlsx"))

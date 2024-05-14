@@ -108,16 +108,9 @@ readr::read_csv("data-raw/dictionary.csv") |>
 
 ## Example: Investment trends in Africa and Asia over 60 years
 
-Here is a basic example demonstrating how to address a common problem:
-analyzing the evolution of financing in the WASH sector over
-60 years. We focus on the continents mentioned in the paper: Africa
-and Asia. The first plot below illustrates the number of investment projects
-financed in the WASH sector from 1960 to 2020. It is evident that a
-higher number of projects in Asia have secured financing. Furthermore,
-there is a noticeable upward trend in the number of investment projects
-over the years, reaching its peak in 2009. In a second place, we display the investment trends in Asia over 60 years, focusing on different regions within the continent. The third plot displays the investment trends in Africa over 60 years, focusing on different regions within the continent.
+Here is a basic example illustrating the analysis of financing trends in the WASH sector over 60 years, with a focus on Africa and Asia as outlined in the paper. The first plot displays the aggregated number of investment projects in the WASH sector from 1960 to 2020, grouped in 10-year intervals. It is notable that a higher number of projects in Asia have secured financing, with a significant increase observed since around the 2000s. Moreover, there is a discernible upward trend in the number of investment projects over the years. Subsequently, we explore investment trends within Asia and Africa separately. The second plot illustrates investment patterns in Asia, examining various regions within the continent. Likewise, the third plot focuses on investment trends in Africa, with a breakdown by different regions.
 
-![](man/figures/africa_asia.png)
+![](man/figures/africa_asia_10.png)
 ![](man/figures/asia.png)
 ![](man/figures/africa.png)
 
@@ -127,9 +120,11 @@ library(ggplot2)
 library(countrycode)
 library(dplyr)
 ----------------------------------------------------------------------------------------------------------------------------
-# Add a new column for continent information
+# Add a new column for continent information as well as a new column for 10-year intervals
 washinvestments <- washinvestments |> 
-  mutate(continent = countrycode(iso_country_code, "iso3c", "continent"))
+  mutate(continent = countrycode(iso_country_code, "iso3c", "continent"),
+         year_interval = cut(year, breaks = seq(1960, 2020, by = 10),
+          labels = seq(1960, 2010, by = 10)))
 
 # Filter the data for Africa and Asia
 washinvestments_asia_africa <- washinvestments |> 
@@ -137,9 +132,9 @@ washinvestments_asia_africa <- washinvestments |>
 
 # Count the number of projects per continent and arrange it in descending order
 continent_counts <- washinvestments_asia_africa |> 
-  group_by(continent) |> 
+  group_by(continent, year_interval) |> 
   summarise(count = n()) |> 
-  arrange(desc(count))
+  arrange(desc(year_interval))
 
 # Encode the continent column as factor with chosen levels for plotting
 washinvestments_asia_africa$continent <- factor(washinvestments_asia_africa$continent, levels = continent_counts$continent)
@@ -171,11 +166,10 @@ africa_counts <- washinvestments_africa |>
 washinvestments_africa$region <- factor(washinvestments_africa$region, levels = africa_counts$region)
 ----------------------------------------------------------------------------------------------------------------------------
 # Create bar plots of investment trends
-ggplot(washinvestments_asia_africa, aes(x = year, fill = continent)) +
-  geom_bar() +
-  scale_x_discrete(breaks = seq(1960, 2020, 10)) +
-  labs(title = "Investment trends in Africa and Asia",
-       x = "Year",
+ggplot(continent_counts, aes(x = year_interval, y = count, fill = continent)) +
+  geom_bar(stat = "identity", position = "dodge") +  # Position dodge for side-by-side bars
+  labs(title = "Investment trends in Africa and Asia (aggregated every 10 years)",
+       x = "Year interval",
        y = "Number of investment projects",
        fill = "Continent") +
   scale_fill_brewer(palette = "Set2") +
