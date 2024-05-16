@@ -6,20 +6,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Dataset on multilateral development bank (MDB) investment in water 
-    supply and sanitation between 1960 and 2020. The data is drawing on 3,639 
+    supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 
     water and sanitation projects to assess territorial trends, technology 
     choices, distribution of financial burdens, and reforms to institutional 
     arrangements.">
 <title>Multilateral development banks investment behaviour in water and 
     sanitation • washinvestments</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Multilateral development banks investment behaviour in water and 
     sanitation">
 <meta property="og:description" content="Dataset on multilateral development bank (MDB) investment in water 
-    supply and sanitation between 1960 and 2020. The data is drawing on 3,639 
+    supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 
     water and sanitation projects to assess territorial trends, technology 
     choices, distribution of financial burdens, and reforms to institutional 
     arrangements.">
@@ -64,8 +64,8 @@
 <div class="page-header"><h1 id="washinvestments">washinvestments<a class="anchor" aria-label="anchor" href="#washinvestments"></a>
 </h1></div>
 <!-- badges: start -->
-<!-- badges: end -->
-<p>The goal of washinvestments is to …</p>
+
+<p>The goal of washinvestments is to provide users documentation on the data set published alongside the article “Multilateral development banks investment behaviour in water and sanitation: Findings and lessons from 60 years of investment projects in Africa and Asia” (Heidler et al. 2023).</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -73,17 +73,34 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"openwashdata/washinvestments"</span><span class="op">)</span></span></code></pre></div>
+<p>Alternatively, you can download the dataset as a CSV or XLSX file from the table below.</p>
+<table class="table">
+<colgroup>
+<col width="7%">
+<col width="44%">
+<col width="47%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">dataset</th>
+<th align="left">CSV</th>
+<th align="left">XLSX</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td align="left">washinvestments</td>
+<td align="left"><a href="https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments.csv">Download CSV</a></td>
+<td align="left"><a href="https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments_utf8.xlsx">Download XLSX</a></td>
+</tr></tbody>
+</table>
 </div>
 <div class="section level2">
 <h2 id="project-goal">Project goal<a class="anchor" aria-label="anchor" href="#project-goal"></a>
 </h2>
-<p>TODO</p>
+<p>Multilateral development banks (MDBs) significantly influence water and sanitation infrastructure development. However, data on their investments is dispersed and hard to compare. This project presents a new data set compiled by drawing on 3,639 water and sanitation projects that aims at assessing “territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements to analyze the investment behaviour of the World Bank, ADB, and AfDB in water supply and sanitation from their first operations in the 1960s until 2020 and distil how they responded to trends in urbanization and the policy debates about governing access to basic services.” (Heidler et al. 2023)</p>
 </div>
 <div class="section level2">
 <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h2>
-<p>TODO</p>
-<p>The package provides access to one data set.</p>
+<p>The data set includes information about water and sanitation projects conducted in Africa and Asia between 1960 and 2020. The package provides access to one data set.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">washinvestments</span><span class="op">)</span></span></code></pre></div>
 <p>The <code>washinvestments</code> data set has 52 variables and 1873 observations. For an overview of the variable names, see the following table.</p>
@@ -91,9 +108,9 @@
 <code class="sourceCode R"><span><span class="va">washinvestments</span></span></code></pre></div>
 <table class="table">
 <colgroup>
-<col width="19%">
-<col width="19%">
-<col width="60%">
+<col width="2%">
+<col width="1%">
+<col width="96%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">variable_name</th>
@@ -103,44 +120,297 @@
 <tbody>
 <tr class="odd">
 <td align="left">id</td>
-<td align="left">NA</td>
-<td align="left">A running id for each entry.</td>
+<td align="left">character</td>
+<td align="left">Identification code provided by the MDBs for each project</td>
 </tr>
 <tr class="even">
 <td align="left">mdb</td>
-<td align="left">NA</td>
-<td align="left">Name of the multilateral development bank.</td>
+<td align="left">character</td>
+<td align="left">Abbreviation of multilateral development bank, from which the database entry was retrieved: IBRD = World Bank, AfDB = African Development Bank and ADB = Asian Development Bank</td>
 </tr>
 <tr class="odd">
 <td align="left">project_name</td>
-<td align="left">NA</td>
-<td align="left">Name of the investment project.</td>
+<td align="left">character</td>
+<td align="left">Name of the project provided by the MDBs for each project</td>
 </tr>
 <tr class="even">
 <td align="left">region</td>
-<td align="left">NA</td>
-<td align="left">Classification of region under ?</td>
+<td align="left">character</td>
+<td align="left">Intermediate Region Code name according to the UNSD-Methodology (UN M49 Standard) in which the project is implemented (UN Statistics Division 2022)</td>
 </tr>
 <tr class="odd">
 <td align="left">multi_country</td>
-<td align="left">NA</td>
-<td align="left">Was this a multi country investment project?</td>
+<td align="left">double</td>
+<td align="left">Indicates if a project is carried out in more than one country: 1 = Project is carried out in more than one country and 0 = Project is carried out in only one country</td>
+</tr>
+<tr class="even">
+<td align="left">country</td>
+<td align="left">character</td>
+<td align="left">Name of the country in which the project was implemented: Values = Country Names and N/A = Multi Country ‘TRUE’</td>
+</tr>
+<tr class="odd">
+<td align="left">iso_country_code</td>
+<td align="left">character</td>
+<td align="left">A three-letter country code which may allow a better visual association between the codes and the country names. For values see: UN M49 Standard, N/A = Multi Country ‘TRUE’</td>
+</tr>
+<tr class="even">
+<td align="left">city</td>
+<td align="left">character</td>
+<td align="left">Name of the city in which the investment project was implemented. MDBs state if the localities are cities, towns or rural areas. If not, the localities were identified in web searches to see whether they qualify as a city or town according to national standards: City name = project is implemented only in one city or town, MULTI = Investments &amp; activities in multiple cities and N/A = only if Context is Rural”</td>
+</tr>
+<tr class="odd">
+<td align="left">year</td>
+<td align="left">double</td>
+<td align="left">Year of investment project approval as provided by the MDBs (1964-2020)</td>
+</tr>
+<tr class="even">
+<td align="left">context</td>
+<td align="left">character</td>
+<td align="left">Morphological and social context of investment project implementation: Urban = urban settlement, Rural = rural settlement and Both = urban and rural settlements are affected. Either national / sectoral programs or projects with activities in urban and rural contexts</td>
+</tr>
+<tr class="odd">
+<td align="left">sector</td>
+<td align="left">character</td>
+<td align="left">Distinct range of activities and infrastructures that are different from others: Sanitation = Only wastewater / sanitation related activities, Sanitation + = Sanitation and other activities different to water supply, Water = Only water supply related activities, Water + = Water supply and other activities different to sanitation, Water &amp; Sanitation = Only water supply and sanitation related activities and Water &amp; Sanitation + = Water supply and sanitation and other activities different to both</td>
+</tr>
+<tr class="even">
+<td align="left">subset</td>
+<td align="left">double</td>
+<td align="left">The dataset is divided into three different subsets to structure data collection efficiently and to align with the research focus on understanding investment behaviour of MDB with regards to urban water and sanitation: 1 = Context is Rural, 2 = Context is Urban, 3 = MDB is IBRD, Context is Urban or Both, Sector is Water, Water +, Sanitation, Sanitation +</td>
+</tr>
+<tr class="odd">
+<td align="left">amount_total_2020usd</td>
+<td align="left">double</td>
+<td align="left">The total amount that is being invested in the project in 2020 USD</td>
+</tr>
+<tr class="even">
+<td align="left">amount_mdb_2020usd</td>
+<td align="left">double</td>
+<td align="left">The value for the amount committed for the investment project that is provided by the bank identified in the MDB variable in 2020 USD</td>
+</tr>
+<tr class="odd">
+<td align="left">sponsorx</td>
+<td align="left">character</td>
+<td align="left">Name of a sponsor contributing to the investment. -X ranks sponsors according to the amount they provide: IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = There a fewer sponsors than X</td>
+</tr>
+<tr class="even">
+<td align="left">amountx</td>
+<td align="left">double</td>
+<td align="left">Contribution by a SponsorX to the project: Values = Amounts in original currency and N/A = There a fewer sponsors than X</td>
+</tr>
+<tr class="odd">
+<td align="left">ppp_sanitation</td>
+<td align="left">character</td>
+<td align="left">The form of the public private partnership (PPP) or private sector participation (PSP) arrangement promoted or implemented. For the distribution of ownership, risks and revenues between public and private actors, refer to Budds &amp; McGranahan (2003). For details on the different PPP categories refer to World Bank (2017): Promotion = Either PPPs or PSP are generally promoted, capacity building or institutional reforms explicitly aim to facilitate PPPs or PSP. But no execution of a specific arrangement is planned under the project, Construction = PPP arrangements focusing solely on design, engineering and construction of infrastructure, Service-O&amp;M = PPP arrangements for service delivery and/or O&amp;M without any ownership of infrastructure asset, Lease-Affermage = The infrastructure is leased to a private actor for a distinct period. The government typically remains responsible for capital expenditures, BOT-type = A private actor builds, operates, and then transfers the infra-structure back to a public actor, Concession = A private actor buys the right to invest in a particular sector for a particular time, Divestiture = Assets and the right to pursue business in a basic service are sold to a private entity</td>
+</tr>
+<tr class="even">
+<td align="left">ppp_water</td>
+<td align="left">character</td>
+<td align="left">The form of the public private partnership (PPP) arrangement implemented with regards to water supply. Same values as for ppp_sanitation</td>
+</tr>
+<tr class="odd">
+<td align="left">amount_sanitation</td>
+<td align="left">double</td>
+<td align="left">The total amount allocated for sanitation related project components: Values = Amounts in original currency, N/A = sector does not include sanitation, NED = available documents did not allow to differentiate between sanitation and other investments</td>
+</tr>
+<tr class="even">
+<td align="left">amount_water</td>
+<td align="left">double</td>
+<td align="left">The total amount allocated for water supply related project components: Values = Amounts in original currency, N/A = sector does not include water supply, NED = available documents did not allow to differentiate between water and other investments</td>
+</tr>
+<tr class="odd">
+<td align="left">primary_c</td>
+<td align="left">character</td>
+<td align="left">Number of primary cities targeted in a project: Numbers = the number of primary cities targeted in a project, MULTI = An uncountable number of primary cities are addressed under the project. This is mainly true for regional or national projects that do not explicitly mention all cities.</td>
+</tr>
+<tr class="even">
+<td align="left">secondary_c</td>
+<td align="left">character</td>
+<td align="left">Number of secondary cities targeted in a project: Numbers = the number of secondary cities targeted in a project and MULTI = An uncountable number of primary cities are addressed under the project</td>
+</tr>
+<tr class="odd">
+<td align="left">towns</td>
+<td align="left">character</td>
+<td align="left">Number of towns targeted in a project: Numbers = the number of secondary cities targeted in a project and MULTI = An uncountable number of primary cities are addressed under the project</td>
+</tr>
+<tr class="even">
+<td align="left">network_infrastructure</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether sewered sanitation infrastructures are financed under the project: TRUE = Sewered sanitation infrastructures are financed under the project, FALSE = No sewered sanitation infrastructures are financed under the project</td>
+</tr>
+<tr class="odd">
+<td align="left">n_drains_sewers</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether sewers or drains are financed under the project: TRUE = Sewers, drains, or other conveyance infrastructures are financed under the project, FALSE = No sewers, drains or conveyance infrastructures are financed under the project</td>
+</tr>
+<tr class="even">
+<td align="left">n_treatment</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether wastewater treatment plants are financed under the project: TRUE = Wastewater treatment capacity through a wastewater treatment plant (WWTP) or sewage treatment plant (STP) is financed under the project, FALSE = No Wastewater treatment capacity through a wastewater treatment plant (WWTP) or sewage treatment plant (STP) is financed under the project</td>
+</tr>
+<tr class="odd">
+<td align="left">non_network_infrastructure</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether non-sewered sanitation infrastructures are financed under the project. The classification of infrastructure components into the different functional groups along the sanitation service chain (following five variables) is based on Tilley et al. (2014): TRUE = non-sewered infrastructures are financed under the project, FALSE = no non-sewered infrastructures are financed under the project</td>
+</tr>
+<tr class="even">
+<td align="left">nn_containment</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether containment infrastructures (shared and private), such as pit latrines are financed under the project: TRUE = containment infrastructure is financed, FALSE = no containment infrastructure is financed</td>
+</tr>
+<tr class="odd">
+<td align="left">nn_transport</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether emptying or transport technologies, such as transfer stations and vacuum trucks are financed under the project: TRUE = emptying/transport technologies are financed, FALSE = no emptying/transport technologies are financed, NA = for all entries that were not coded under Subset 3, NED = only if on-site hardware is true</td>
+</tr>
+<tr class="even">
+<td align="left">nn_treatment</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether faecal sludge treatment plants or other non-sewered treatment infrastructures are financed under the project: TRUE = treatment infrastructure is financed, FALSE = no containment infrastructure is financed</td>
+</tr>
+<tr class="odd">
+<td align="left">nn_disposal</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether disposal infrastructures are financed under the project: TRUE = disposal infrastructure is financed, FALSE = no containment infrastructure is financed</td>
+</tr>
+<tr class="even">
+<td align="left">nn_reuse</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether reuse infrastructures are financed under the project: TRUE = reuse infrastructure is financed, FALSE = no containment infrastructure is financed</td>
+</tr>
+<tr class="odd">
+<td align="left">ur1</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms aim to battle inefficiencies by reducing leakages, improving metering and billing and introducing efficient technologies. The variables UR1–UR5 are based on the definition and detailed description of the different steps of the ‘maturity ladder for the urban water sector’ from Goksu et al. (2019): TRUE = reforms to battle inefficiencies are financed, FALSE = no reforms to battle inefficiencies are financed</td>
+</tr>
+<tr class="even">
+<td align="left">ur2</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms aim to build capacity at the organizations (utilities/departments) responsible for providing access to water supply and sanitation by amongst others institutional strengthening, financial training, training in environmental monitoring, technical assistance for operation and maintenance and training in (integrated) planning: TRUE = reforms to build capacity are financed, FALSE = no reforms to build capacity are financed</td>
+</tr>
+<tr class="odd">
+<td align="left">ur3</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms aim to align institutions and incentives by introducing full cost recovery principles/tariffs and improving customer management. Through promoting institutional, organizational, regulatory, and sector reforms or by increasing the autonomy of utilities through decentralization and corporatization: TRUE = reforms to align institutions and incentives are financed, FALSE = no reforms to align institutions and incentives are financed</td>
+</tr>
+<tr class="even">
+<td align="left">ur4</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms aim to incentivise performance through performance contracts and performance based financing, by private sector participation and building utilities’ creditworthiness: TRUE = reforms to incentivise performance are financed, FALSE = no reforms to incentivise performance are financed</td>
+</tr>
+<tr class="odd">
+<td align="left">ur5</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms aim to ‘go to the market’ through pursuing specific PPP arrangements are financed under the investment project: TRUE = reforms to increase private partnerships are financed, FALSE = no reforms to increase private partnerships are financed</td>
+</tr>
+<tr class="even">
+<td align="left">er1</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms address authorities to improve the enabling environment for non-sewered sanitation and the sanitation economy. The variables ER1-ER3 are based on the suggestions of WSUP (2020) and IWA (2021) for reforming the sanitation sector to scale non-sewered infrastructures: TRUE = reforms to create an enabling regulatory environment are financed, FALSE = no reforms to create an enabling regulatory environment are financed</td>
+</tr>
+<tr class="odd">
+<td align="left">er2</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms address private sector service providers and aim to incentivise them to enter the sanitation economy or regulate their activities: TRUE = reforms to regulate sanitation service providers are financed, FALSE = no reforms to regulate sanitation service providers are financed, NA = for all entries that were not coded under Subset 3</td>
+</tr>
+<tr class="even">
+<td align="left">er3</td>
+<td align="left">logical</td>
+<td align="left">Indicates whether institutional reforms address households or communities and aim to increase awareness of and demand for non-sewered sanitation solutions or to set up service co-production arrangements: TRUE = reforms to create demand and awareness for sanitation are financed, FALSE = no reforms to create demand and awareness for sanitation are financed, NA = for all entries that were not coded under Subset 3</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="example-investment-trends-in-africa-and-asia-over-60-years">Example: Investment trends in Africa and Asia over 60 years<a class="anchor" aria-label="anchor" href="#example-investment-trends-in-africa-and-asia-over-60-years"></a>
 </h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<p>Here is a basic example illustrating the analysis of financing trends in the WASH sector over 60 years, with a focus on Africa and Asia as outlined in the paper. The first plot displays the aggregated number of investment projects in the WASH sector from 1960 to 2020, grouped in 10-year intervals. It is notable that a higher number of projects in Asia have secured financing, with a significant increase observed since around the 2000s. Moreover, there is a discernible upward trend in the number of investment projects over the years. Subsequently, we explore investment trends within Asia and Africa separately. The second plot illustrates investment patterns in Asia, examining various regions within the continent. Likewise, the third plot focuses on investment trends in Africa, with a breakdown by different regions.</p>
+<p><img src="reference/figures/africa_asia_10.png"><img src="reference/figures/asia.png"><img src="reference/figures/africa.png"></p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">washinvestments</span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://vincentarelbundock.github.io/countrycode/" class="external-link">countrycode</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span></span>
+<span><span class="co"># Add a new column for continent information as well as a new column for 10-year intervals</span></span>
+<span><span class="va">washinvestments</span> <span class="op">&lt;-</span> <span class="va">washinvestments</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>continent <span class="op">=</span> <span class="fu"><a href="https://vincentarelbundock.github.io/countrycode/reference/countrycode.html" class="external-link">countrycode</a></span><span class="op">(</span><span class="va">iso_country_code</span>, <span class="st">"iso3c"</span>, <span class="st">"continent"</span><span class="op">)</span>,</span>
+<span>         year_interval <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/cut.html" class="external-link">cut</a></span><span class="op">(</span><span class="va">year</span>, breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">1960</span>, <span class="fl">2020</span>, by <span class="op">=</span> <span class="fl">10</span><span class="op">)</span>,</span>
+<span>          labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">1960</span>, <span class="fl">2010</span>, by <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Filter the data for Africa and Asia</span></span>
+<span><span class="va">washinvestments_asia_africa</span> <span class="op">&lt;-</span> <span class="va">washinvestments</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">continent</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Africa"</span>, <span class="st">"Asia"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Count the number of projects per continent and arrange it in descending order</span></span>
+<span><span class="va">continent_counts</span> <span class="op">&lt;-</span> <span class="va">washinvestments_asia_africa</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">continent</span>, <span class="va">year_interval</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span>count <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html" class="external-link">n</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html" class="external-link">desc</a></span><span class="op">(</span><span class="va">year_interval</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Encode the continent column as factor with chosen levels for plotting</span></span>
+<span><span class="va">washinvestments_asia_africa</span><span class="op">$</span><span class="va">continent</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">washinvestments_asia_africa</span><span class="op">$</span><span class="va">continent</span>, levels <span class="op">=</span> <span class="va">continent_counts</span><span class="op">$</span><span class="va">continent</span><span class="op">)</span></span>
+<span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span></span>
+<span><span class="co"># Filter the data set for Asia</span></span>
+<span><span class="va">washinvestments_asia</span> <span class="op">&lt;-</span> <span class="va">washinvestments</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">region</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Central Asia"</span>, <span class="st">"Eastern Asia"</span>, <span class="st">"Polynesia"</span>, <span class="st">"South-eastern Asia"</span>, <span class="st">"Southern Asia"</span>, <span class="st">"Western Asia"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Count the number of projects per region and arrange it in descending order</span></span>
+<span><span class="va">asia_counts</span> <span class="op">&lt;-</span> <span class="va">washinvestments_asia</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">region</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span>count <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html" class="external-link">n</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html" class="external-link">desc</a></span><span class="op">(</span><span class="va">count</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Encode the region column as factor with chosen levels for plotting</span></span>
+<span><span class="va">washinvestments_asia</span><span class="op">$</span><span class="va">region</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">washinvestments_asia</span><span class="op">$</span><span class="va">region</span>, levels <span class="op">=</span> <span class="va">asia_counts</span><span class="op">$</span><span class="va">region</span><span class="op">)</span></span>
+<span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span></span>
+<span><span class="co"># Filter the data set for Africa</span></span>
+<span><span class="va">washinvestments_africa</span> <span class="op">&lt;-</span> <span class="va">washinvestments</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">region</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Northern Africa"</span>, <span class="st">"Eastern Africa"</span>, <span class="st">"Middle Africa"</span>, <span class="st">"Western Africa"</span>, <span class="st">"Southern Africa"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Count the number of projects per region and arrange it in descending order</span></span>
+<span><span class="va">africa_counts</span> <span class="op">&lt;-</span> <span class="va">washinvestments_africa</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">region</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span>count <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html" class="external-link">n</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html" class="external-link">desc</a></span><span class="op">(</span><span class="va">count</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Encode the region column as factor with chosen levels for plotting</span></span>
+<span><span class="va">washinvestments_africa</span><span class="op">$</span><span class="va">region</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">washinvestments_africa</span><span class="op">$</span><span class="va">region</span>, levels <span class="op">=</span> <span class="va">africa_counts</span><span class="op">$</span><span class="va">region</span><span class="op">)</span></span>
+<span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span><span class="op">-</span></span>
+<span><span class="co"># Create bar plots of investment trends</span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">continent_counts</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">year_interval</span>, y <span class="op">=</span> <span class="va">count</span>, fill <span class="op">=</span> <span class="va">continent</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_bar</a></span><span class="op">(</span>stat <span class="op">=</span> <span class="st">"identity"</span>, position <span class="op">=</span> <span class="st">"dodge"</span><span class="op">)</span> <span class="op">+</span>  <span class="co"># Position dodge for side-by-side bars</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Investment trends in Africa and Asia (aggregated every 10 years)"</span>,</span>
+<span>       x <span class="op">=</span> <span class="st">"Year interval"</span>,</span>
+<span>       y <span class="op">=</span> <span class="st">"Number of investment projects"</span>,</span>
+<span>       fill <span class="op">=</span> <span class="st">"Continent"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="external-link">scale_fill_brewer</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"Set2"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>hjust <span class="op">=</span> <span class="fl">0.5</span>, face <span class="op">=</span> <span class="st">"bold"</span>, color <span class="op">=</span> <span class="st">"#333333"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">washinvestments_asia</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, fill <span class="op">=</span> <span class="va">region</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_bar</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_discrete.html" class="external-link">scale_x_discrete</a></span><span class="op">(</span>breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">1960</span>, <span class="fl">2020</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Investment trends in Asia"</span>,</span>
+<span>       x <span class="op">=</span> <span class="st">"Year"</span>,</span>
+<span>       y <span class="op">=</span> <span class="st">"Number of investment projects"</span>,</span>
+<span>       fill <span class="op">=</span> <span class="st">"Region"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="external-link">scale_fill_brewer</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"Set2"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>hjust <span class="op">=</span> <span class="fl">0.5</span>, face <span class="op">=</span> <span class="st">"bold"</span>, color <span class="op">=</span> <span class="st">"#333333"</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">washinvestments_africa</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, fill <span class="op">=</span> <span class="va">region</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_bar</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_discrete.html" class="external-link">scale_x_discrete</a></span><span class="op">(</span>breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">1960</span>, <span class="fl">2020</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Investment trends in Africa"</span>,</span>
+<span>       x <span class="op">=</span> <span class="st">"Year"</span>,</span>
+<span>       y <span class="op">=</span> <span class="st">"Number of investment projects"</span>,</span>
+<span>       fill <span class="op">=</span> <span class="st">"Region"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="external-link">scale_fill_brewer</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"Set2"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>hjust <span class="op">=</span> <span class="fl">0.5</span>, face <span class="op">=</span> <span class="st">"bold"</span>, color <span class="op">=</span> <span class="st">"#333333"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
 </h2>
-<p>Data are available as <a href="https://github.com/openwashdata/washinvestments/LICENSE.md" class="external-link">CC-BY</a>.</p>
+<p>Data are available as <a href="https://github.com/openwashdata/washinvestments/LICENSE.md">CC-BY</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
@@ -150,25 +420,30 @@
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"washinvestments"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; To cite package 'washinvestments' in publications use:</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   Schöbitz L (2024). _washinvestments: Multilateral development banks</span></span>
-<span><span class="co">#&gt;   investment behaviour in water and sanitation_. R package version</span></span>
-<span><span class="co">#&gt;   0.0.0.9000.</span></span>
+<span><span class="co">#&gt;   Götschmann M, Heidler A, Nesi M, Nikiema J, Lüthi C (2024).</span></span>
+<span><span class="co">#&gt;   "washinvestments: Multilateral development banks investment behaviour</span></span>
+<span><span class="co">#&gt;   in water and sanitation."</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   @Manual{,</span></span>
-<span><span class="co">#&gt;     title = {washinvestments: Multilateral development banks investment behaviour in water and</span></span>
-<span><span class="co">#&gt; sanitation},</span></span>
-<span><span class="co">#&gt;     author = {Lars Schöbitz},</span></span>
+<span><span class="co">#&gt;   @Misc{gotschmann_etall:2024,</span></span>
+<span><span class="co">#&gt;     title = {washinvestments: Multilateral development banks investment behaviour in water and sanitation},</span></span>
+<span><span class="co">#&gt;     author = {Margaux Götschmann and Andri Heidler and Muhil Nesi and Josiane Nikiema and Christoph Lüthi},</span></span>
 <span><span class="co">#&gt;     year = {2024},</span></span>
-<span><span class="co">#&gt;     note = {R package version 0.0.0.9000},</span></span>
+<span><span class="co">#&gt;     abstract = {Dataset on multilateral development bank (MDB) investment in water supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 water and sanitation projects to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements.},</span></span>
+<span><span class="co">#&gt;     version = {0.0.0.9000},</span></span>
 <span><span class="co">#&gt;   }</span></span></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-heidler2023multilateral" class="csl-entry">
+Heidler, Andri, Muhil Nesi, Josiane Nikiema, and Christoph Lüthi. 2023. “Multilateral Development Banks Investment Behaviour in Water and Sanitation: Findings and Lessons from 60 Years of Investment Projects in Africa and Asia.” <em>Journal of Water, Sanitation and Hygiene for Development</em> 13 (5): 362–74. <a href="https://doi.org/10.2166/washdev.2023.004" class="external-link uri">https://doi.org/10.2166/washdev.2023.004</a>.
+</div>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/openwashdata/washinvestments" class="external-link">GitHub repository</a></li>
+<li><a href="https://github.com/openwashdata/washinvestments">GitHub repository</a></li>
 </ul>
 </div>
 
@@ -183,12 +458,21 @@
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>So <em>who</em> does the work?</li>
-<li>Lars Schöbitz <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-2196-5015" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Margaux Götschmann <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0009-0002-2567-3343" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Andri Heidler <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-2138-4675" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Muhil Nesi <br><small class="roles"> Author </small>  </li>
+<li>Josiane Nikiema <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0001-8802-0564" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Christoph Lüthi <br><small class="roles"> Author </small>  </li>
 <li>Thanks all!</li>
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/openwashdata/washinvestments/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/openwashdata/washinvestments/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+</ul>
+</div>
 
 <div class="funding">
 <h2 data-toc-skip>Funding</h2>
@@ -203,7 +487,7 @@
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Crafted by Lars Schöbitz.</p>
+<p>Crafted by Margaux Götschmann.</p>
 </div>
 
 <div class="pkgdown-footer-right">

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/openwashdata/washinvestments/blob/main/_pkgdown.yml/404.html</loc>
+    <loc>https://github.com/openwashdata/washinvestments/404.html</loc>
   </url>
   <url>
-    <loc>https://github.com/openwashdata/washinvestments/blob/main/_pkgdown.yml/LICENSE.html</loc>
+    <loc>https://github.com/openwashdata/washinvestments/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://github.com/openwashdata/washinvestments/blob/main/_pkgdown.yml/authors.html</loc>
+    <loc>https://github.com/openwashdata/washinvestments/authors.html</loc>
   </url>
   <url>
-    <loc>https://github.com/openwashdata/washinvestments/blob/main/_pkgdown.yml/index.html</loc>
+    <loc>https://github.com/openwashdata/washinvestments/index.html</loc>
   </url>
   <url>
-    <loc>https://github.com/openwashdata/washinvestments/blob/main/_pkgdown.yml/reference/index.html</loc>
+    <loc>https://github.com/openwashdata/washinvestments/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://github.com/openwashdata/washinvestments/blob/main/_pkgdown.yml/reference/washinvestments.html</loc>
+    <loc>https://github.com/openwashdata/washinvestments/reference/washinvestments.html</loc>
   </url>
 </urlset>
