@@ -10,6 +10,7 @@ license: CC-BY-4.0
 title: 'washinvestments: Multilateral development banks investment behaviour in water
   and sanitation'
 version: 0.0.1
+doi: 10.5281/zenodo.11203434
 abstract: Dataset on multilateral development bank (MDB) investment in water supply
   and sanitation between 1960 and 2020 compiled by drawing on on 3,639 water and sanitation
   projects to assess territorial trends, technology choices, distribution of financial
@@ -29,46 +30,9 @@ authors:
   orcid: https://orcid.org/0000-0001-8802-0564
 - family-names: Lüthi
   given-names: Christoph
-preferred-citation:
-  type: generic
-  title: 'washinvestments: Multilateral development banks investment behaviour in
-    water and sanitation'
-  authors:
-  - family-names: Götschmann
-    given-names: Margaux
-    email: margauxg@ethz.ch
-    orcid: https://orcid.org/0009-0002-2567-3343
-  - family-names: Heidler
-    given-names: Andri
-    orcid: https://orcid.org/0000-0003-2138-4675
-  - family-names: Nesi
-    given-names: Muhil
-  - family-names: Nikiema
-    given-names: Josiane
-    orcid: https://orcid.org/0000-0001-8802-0564
-  - family-names: Lüthi
-    given-names: Christoph
-  year: '2024'
-  abstract: Dataset on multilateral development bank (MDB) investment in water supply
-    and sanitation between 1960 and 2020 compiled by drawing on on 3,639 water and
-    sanitation projects to assess territorial trends, technology choices, distribution
-    of financial burdens, and reforms to institutional arrangements.
-  version: 0.0.0.9000
 date-released: '2024-05-16'
 contact:
 - family-names: Götschmann
   given-names: Margaux
   email: margauxg@ethz.ch
   orcid: https://orcid.org/0009-0002-2567-3343
-references:
-- type: software
-  title: 'R: A Language and Environment for Statistical Computing'
-  notes: Depends
-  url: https://www.R-project.org/
-  authors:
-  - name: R Core Team
-  institution:
-    name: R Foundation for Statistical Computing
-    address: Vienna, Austria
-  year: '2024'
-  version: '>= 2.10'
