@@ -1,6 +1,5 @@
 Package: washinvestments
-Title: Multilateral development banks investment behaviour in water and 
-    sanitation
+Title: Multilateral Development Bank Investment in Water and Sanitation
 Version: 0.0.1
 Authors@R:c(
     person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
