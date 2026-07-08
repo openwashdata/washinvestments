@@ -1,7 +1,7 @@
 
 bibentry(bibtype = "Misc",
          key = "gotschmann_etall:2024",
-         title = "washinvestments: Multilateral development banks investment behaviour in water and sanitation",
+         title = "washinvestments: Multilateral Development Bank Investment in Water and Sanitation",
          author = c(person(given = "Margaux",
                            family = "Götschmann",
                            email = "margauxg@ethz.ch",
@@ -18,5 +18,7 @@ bibentry(bibtype = "Misc",
                            family = "Lüthi")),
          year = "2024",
          doi = "10.5281/zenodo.11203434",
-         abstract = "Dataset on multilateral development bank (MDB) investment in water supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 water and sanitation projects to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements.",
+         url = "https://openwashdata.github.io/washinvestments/",
+         abstract = "Dataset on multilateral development bank (MDB) investment in water supply and sanitation between 1960 and 2020 compiled by drawing on 3,639 water and sanitation projects to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements.",
+         keywords = "africa,asia,investment,mdb,open-data,r,sanitation,wash,water",
          version = "0.0.1")
