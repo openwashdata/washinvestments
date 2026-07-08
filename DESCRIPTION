@@ -1,8 +1,7 @@
 Package: washinvestments
-Title: Multilateral development banks investment behaviour in water and 
-    sanitation
+Title: Multilateral Development Bank Investment in Water and Sanitation
 Version: 0.0.1
-Authors@R:c(
+Authors@R: c(
     person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0002-2567-3343")),
     person("Andri", "Heidler", , role = "aut", comment = c(ORCID = "0000-0003-2138-4675")),
@@ -11,11 +10,14 @@ Authors@R:c(
     person("Christoph", "Lüthi", , role = "aut")
            )
 Description: Dataset on multilateral development bank (MDB) investment in water 
-    supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 
+    supply and sanitation between 1960 and 2020 compiled by drawing on 3,639
     water and sanitation projects to assess territorial trends, technology 
     choices, distribution of financial burdens, and reforms to institutional 
     arrangements.
 License: CC BY 4.0
+URL: https://github.com/openwashdata/washinvestments,
+    https://openwashdata.github.io/washinvestments/
+BugReports: https://github.com/openwashdata/washinvestments/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
@@ -24,3 +26,4 @@ Depends:
 LazyData: true
 Language: en-GB
 Date: 2024-05-16
+Config/Needs/website: rmarkdown

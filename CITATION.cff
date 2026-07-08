@@ -1,18 +1,17 @@
-# -----------------------------------------------------------
-# CITATION file created with {cffr} R package, v1.0.0
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
 # See also: https://docs.ropensci.org/cffr/
-# -----------------------------------------------------------
+# ------------------------------------------------
  
 cff-version: 1.2.0
 message: 'To cite package "washinvestments" in publications use:'
 type: software
 license: CC-BY-4.0
-title: 'washinvestments: Multilateral development banks investment behaviour in water
-  and sanitation'
+title: 'washinvestments: Multilateral Development Bank Investment in Water and Sanitation'
 version: 0.0.1
 doi: 10.5281/zenodo.11203434
 abstract: Dataset on multilateral development bank (MDB) investment in water supply
-  and sanitation between 1960 and 2020 compiled by drawing on on 3,639 water and sanitation
+  and sanitation between 1960 and 2020 compiled by drawing on 3,639 water and sanitation
   projects to assess territorial trends, technology choices, distribution of financial
   burdens, and reforms to institutional arrangements.
 authors:
@@ -30,9 +29,22 @@ authors:
   orcid: https://orcid.org/0000-0001-8802-0564
 - family-names: Lüthi
   given-names: Christoph
+repository-code: https://github.com/openwashdata/washinvestments
+url: https://openwashdata.github.io/washinvestments/
 date-released: '2024-05-16'
 contact:
 - family-names: Götschmann
   given-names: Margaux
   email: margauxg@ethz.ch
   orcid: https://orcid.org/0009-0002-2567-3343
+keywords:
+- africa
+- asia
+- investment
+- mdb
+- open-data
+- r
+- sanitation
+- wash
+- water
+
