@@ -10,7 +10,7 @@ Authors@R:c(
     person("Christoph", "Lüthi", , role = "aut")
            )
 Description: Dataset on multilateral development bank (MDB) investment in water 
-    supply and sanitation between 1960 and 2020 compiled by drawing on on 3,639 
+    supply and sanitation between 1960 and 2020 compiled by drawing on 3,639
     water and sanitation projects to assess territorial trends, technology 
     choices, distribution of financial burdens, and reforms to institutional 
     arrangements.
