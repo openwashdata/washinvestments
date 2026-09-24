@@ -11,26 +11,27 @@ Authors@R: c(
     person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = "cre",
            comment = c(ORCID = "0000-0003-2196-5015"))
            )
-Description: Dataset on multilateral development bank (MDB) investment in water 
-    supply and sanitation between 1960 and 2020 compiled by drawing on 3,639
-    water and sanitation projects to assess territorial trends, technology 
-    choices, distribution of financial burdens, and reforms to institutional 
-    arrangements.
+Description: Dataset on multilateral development bank (MDB) investment in water
+    supply and sanitation: 1,873 project records of the World Bank, the African
+    Development Bank and the Asian Development Bank, approved between 1963 and
+    2020, compiled to assess territorial trends, technology choices,
+    distribution of financial burdens, and reforms to institutional
+    arrangements. Most records are for projects in Africa and Asia.
 License: CC BY 4.0
 URL: https://github.com/openwashdata/washinvestments,
     https://openwashdata.github.io/washinvestments/
 BugReports: https://github.com/openwashdata/washinvestments/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 Depends: 
     R (>= 2.10)
 LazyData: true
 Language: en-GB
 Date: 2024-05-16
-Config/Needs/website: rmarkdown
+Config/Needs/website: rmarkdown, tidyverse, epoxy
 X-schema.org-keywords: open data, washdata, multilateral development banks,
     investment, water supply, sanitation, Africa, Asia
 X-schema.org-spatialCoverage: Global, 149 countries in Africa, Asia, Latin
     America and the Caribbean, Europe and Oceania
 X-schema.org-temporalCoverage: 1963-01-01/2020-12-31
+Config/roxygen2/version: 8.0.0

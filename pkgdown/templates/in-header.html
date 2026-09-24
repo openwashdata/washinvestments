@@ -6,7 +6,7 @@
   "@type": "Dataset",
   "name": "Multilateral Development Bank Investment in Water and Sanitation",
   "alternateName": "washinvestments",
-  "description": "Dataset on multilateral development bank (MDB) investment in water supply and sanitation between 1960 and 2020 compiled by drawing on 3,639 water and sanitation projects to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements.",
+  "description": "Dataset on multilateral development bank (MDB) investment in water supply and sanitation: 1,873 project records of the World Bank, the African Development Bank and the Asian Development Bank, approved between 1963 and 2020, compiled to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements. Most records are for projects in Africa and Asia.",
   "version": "0.0.1",
   "url": "https://openwashdata.github.io/washinvestments/",
   "sameAs": "https://doi.org/10.5281/zenodo.11203433",
@@ -114,12 +114,12 @@
     {
       "@type": "PropertyValue",
       "name": "city",
-      "description": "Name of the city in which the investment project was implemented. MDBs state if the localities are cities, towns or rural areas. If not, the localities were identified in web searches to see whether they qualify as a city or town according to national standards: City name = project is implemented only in one city or town, MULTI = Investments & activities in multiple cities and N/A = only if Context is Rural\""
+      "description": "Name of the city in which the investment project was implemented. MDBs state if the localities are cities, towns or rural areas. If not, the localities were identified in web searches to see whether they qualify as a city or town according to national standards: City name = project is implemented only in one city or town, MULTI = Investments & activities in multiple cities and N/A = only if Context is Rural"
     },
     {
       "@type": "PropertyValue",
       "name": "year",
-      "description": "Year of investment project approval as provided by the MDBs (1964-2020)"
+      "description": "Year of investment project approval as provided by the MDBs (1963-2020)"
     },
     {
       "@type": "PropertyValue",
@@ -138,23 +138,83 @@
     },
     {
       "@type": "PropertyValue",
-      "name": "amount_total_2020usd",
+      "name": "amounttotal_2020usd",
       "description": "The total amount that is being invested in the project in 2020 USD"
     },
     {
       "@type": "PropertyValue",
-      "name": "amount_mdb_2020usd",
+      "name": "amountmdb_2020usd",
       "description": "The value for the amount committed for the investment project that is provided by the bank identified in the MDB variable in 2020 USD"
     },
     {
       "@type": "PropertyValue",
-      "name": "sponsorx",
-      "description": "Name of a sponsor contributing to the investment. -X ranks sponsors according to the amount they provide: IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = There a fewer sponsors than X"
+      "name": "sponsor1",
+      "description": "Name of the sponsor ranked 1 of up to 7 by the amount it contributes to the investment (sponsor1 provides the largest amount): IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = No sponsor is recorded"
     },
     {
       "@type": "PropertyValue",
-      "name": "amountx",
-      "description": "Contribution by a SponsorX to the project: Values = Amounts in original currency and N/A = There a fewer sponsors than X"
+      "name": "amount1",
+      "description": "Contribution by sponsor1 to the project: Values = Amounts in original currency and N/A = No sponsor is recorded"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sponsor2",
+      "description": "Name of the sponsor ranked 2 of up to 7 by the amount it contributes to the investment (sponsor1 provides the largest amount): IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = The project has fewer than 2 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "amount2",
+      "description": "Contribution by sponsor2 to the project: Values = Amounts in original currency and N/A = The project has fewer than 2 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sponsor3",
+      "description": "Name of the sponsor ranked 3 of up to 7 by the amount it contributes to the investment (sponsor1 provides the largest amount): IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = The project has fewer than 3 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "amount3",
+      "description": "Contribution by sponsor3 to the project: Values = Amounts in original currency and N/A = The project has fewer than 3 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sponsor4",
+      "description": "Name of the sponsor ranked 4 of up to 7 by the amount it contributes to the investment (sponsor1 provides the largest amount): IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = The project has fewer than 4 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "amount4",
+      "description": "Contribution by sponsor4 to the project: Values = Amounts in original currency and N/A = The project has fewer than 4 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sponsor5",
+      "description": "Name of the sponsor ranked 5 of up to 7 by the amount it contributes to the investment (sponsor1 provides the largest amount): IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = The project has fewer than 5 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "amount5",
+      "description": "Contribution by sponsor5 to the project: Values = Amounts in original currency and N/A = The project has fewer than 5 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sponsor6",
+      "description": "Name of the sponsor ranked 6 of up to 7 by the amount it contributes to the investment (sponsor1 provides the largest amount): IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = The project has fewer than 6 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "amount6",
+      "description": "Contribution by sponsor6 to the project: Values = Amounts in original currency and N/A = The project has fewer than 6 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "sponsor7",
+      "description": "Name of the sponsor ranked 7 of up to 7 by the amount it contributes to the investment (sponsor1 provides the largest amount): IBRD = World Bank, ADB = Asian Development Bank, AfDB = African Development Bank, Gov = Borrowing governments own contribution, Com = Recipient communities own contribution, Other Multi-Bi = Any multilateral or bilateral organization contributing to the investment, Privat = Any private source of finance contributing to the investment, N/A = The project has fewer than 7 sponsors"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "amount7",
+      "description": "Contribution by sponsor7 to the project: Values = Amounts in original currency and N/A = The project has fewer than 7 sponsors"
     },
     {
       "@type": "PropertyValue",
@@ -178,12 +238,12 @@
     },
     {
       "@type": "PropertyValue",
-      "name": "primary_c",
+      "name": "primaryc",
       "description": "Number of primary cities targeted in a project: Numbers = the number of primary cities targeted in a project, MULTI = An uncountable number of primary cities are addressed under the project. This is mainly true for regional or national projects that do not explicitly mention all cities."
     },
     {
       "@type": "PropertyValue",
-      "name": "secondary_c",
+      "name": "secondaryc",
       "description": "Number of secondary cities targeted in a project: Numbers = the number of secondary cities targeted in a project and MULTI = An uncountable number of primary cities are addressed under the project"
     },
     {
