@@ -33,7 +33,7 @@ library(washinvestments)
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-orange.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![R-CMD-check](https://github.com/openwashdata/washinvestments/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/washinvestments/actions/workflows/R-CMD-check.yaml)
-[![DOI](https://zenodo.org/badge/770378167.svg)](https://zenodo.org/doi/10.5281/zenodo.11203434)
+[![DOI](https://zenodo.org/badge/770378167.svg)](https://zenodo.org/doi/10.5281/zenodo.11203433)
 <!-- badges: end -->
 
 The goal of washinvestments is to provide users documentation on the data set published alongside the article "Multilateral
@@ -86,9 +86,9 @@ policy debates about governing access to basic services."
 
 ## Data
 
-The data set includes information about water and sanitation projects
-conducted in Africa and Asia between 1960 and 2020. The package provides
-access to one data set.
+The data set includes 1,873 records of water and sanitation projects
+approved between 1963 and 2020, most of them in Africa and Asia. The
+package provides access to one data set.
 
 ```{r, echo = TRUE}
 library(washinvestments)
@@ -202,7 +202,7 @@ ggplot(washinvestments_africa, aes(x = year, fill = region)) +
 ## License
 
 Data are available as
-[CC-BY](https://github.com/openwashdata/washinvestments/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/washinvestments/blob/main/LICENSE.md).
 
 ## Citation
 
