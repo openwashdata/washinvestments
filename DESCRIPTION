@@ -29,3 +29,8 @@ LazyData: true
 Language: en-GB
 Date: 2024-05-16
 Config/Needs/website: rmarkdown
+X-schema.org-keywords: open data, washdata, multilateral development banks,
+    investment, water supply, sanitation, Africa, Asia
+X-schema.org-spatialCoverage: Global, 149 countries in Africa, Asia, Latin
+    America and the Caribbean, Europe and Oceania
+X-schema.org-temporalCoverage: 1963-01-01/2020-12-31
