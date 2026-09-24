@@ -202,7 +202,7 @@ ggplot(washinvestments_africa, aes(x = year, fill = region)) +
 ## License
 
 Data are available as
-[CC-BY](https://github.com/openwashdata/washinvestments/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/washinvestments/blob/main/LICENSE.md).
 
 ## Citation
 

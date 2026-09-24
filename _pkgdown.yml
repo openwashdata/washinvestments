@@ -1,10 +1,10 @@
-url: https://github.com/openwashdata/washinvestments
+url: https://openwashdata.github.io/washinvestments/
 
 template:
   bootstrap: 5
   includes:
     in_header: |
-      <script defer data-domain="openwashdata.github.io/" src="https://plausible.io/js/script.js"></script>
+      <script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
 
 home:
   links:
@@ -26,3 +26,9 @@ authors:
     roles: [cre, aut, ctb]
     before: "So *who* does the work?"
     after: "Thanks all!"
+
+reference:
+- title: "Data"
+  desc: "Access the washinvestments dataset"
+  contents:
+  - washinvestments
