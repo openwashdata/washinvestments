@@ -64,7 +64,7 @@ read_csv("data-raw/dictionary.csv") |>
   dplyr::rename(dataset = file_name) |> 
   mutate(
     CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
-    XLSX = paste0("[Download XLSX](", extdata_path, dataset, "_utf8.xlsx)")
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
   ) |> 
   knitr::kable()
 
@@ -86,7 +86,7 @@ policy debates about governing access to basic services."
 
 ## Data
 
-The data set includes 1,873 records of water and sanitation projects
+The data set includes 1,872 records of water and sanitation projects
 approved between 1963 and 2020, most of them in Africa and Asia. The
 package provides access to one data set.
 

@@ -6,7 +6,7 @@
 \title{Multilateral development banks investment behaviour in water and
 sanitation}
 \format{
-A tibble with 1873 rows and 52 variables
+A tibble with 1872 rows and 52 variables
 \describe{
 \item{id}{Identification code provided by the MDBs for each project}
 \item{mdb}{Abbreviation of multilateral development bank, from which the database entry was retrieved: IBRD = World Bank, AfDB = African Development Bank and ADB = Asian Development Bank}
@@ -67,7 +67,7 @@ washinvestments
 }
 \description{
 Data set on multilateral development bank (MDB) investment in water
-supply and sanitation: 1,873 project records of the World Bank, the African
+supply and sanitation: 1,872 project records of the World Bank, the African
 Development Bank and the Asian Development Bank, approved between 1963 and
 2020, compiled to assess territorial trends, technology choices,
 distribution of financial burdens, and reforms to institutional
