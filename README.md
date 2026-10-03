@@ -32,7 +32,7 @@ the table below.
 
 | dataset | CSV | XLSX |
 |:---|:---|:---|
-| washinvestments | [Download CSV](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments.csv) | [Download XLSX](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments_utf8.xlsx) |
+| washinvestments | [Download CSV](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments.csv) | [Download XLSX](https://github.com/openwashdata/washinvestments/raw/main/inst/extdata/washinvestments.xlsx) |
 
 ## Project goal
 
@@ -50,7 +50,7 @@ services.” (Heidler et al. 2023)
 
 ## Data
 
-The data set includes 1,873 records of water and sanitation projects
+The data set includes 1,872 records of water and sanitation projects
 approved between 1963 and 2020, most of them in Africa and Asia. The
 package provides access to one data set.
 
@@ -58,7 +58,7 @@ package provides access to one data set.
 library(washinvestments)
 ```
 
-The `washinvestments` data set has 52 variables and 1873 observations.
+The `washinvestments` data set has 52 variables and 1872 observations.
 For an overview of the variable names, see the following table.
 
 ``` r
@@ -247,9 +247,9 @@ citation("washinvestments")
 #>     year = {2024},
 #>     doi = {10.5281/zenodo.11203433},
 #>     url = {https://openwashdata.github.io/washinvestments/},
-#>     abstract = {Dataset on multilateral development bank (MDB) investment in water supply and sanitation: 1,873 project records of the World Bank, the African Development Bank and the Asian Development Bank, approved between 1963 and 2020, compiled to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements. Most records are for projects in Africa and Asia.},
+#>     abstract = {Dataset on multilateral development bank (MDB) investment in water supply and sanitation: 1,872 project records of the World Bank, the African Development Bank and the Asian Development Bank, approved between 1963 and 2020, compiled to assess territorial trends, technology choices, distribution of financial burdens, and reforms to institutional arrangements. Most records are for projects in Africa and Asia.},
 #>     keywords = {open data,washdata,multilateral development banks,investment,water supply,sanitation,Africa,Asia,africa,asia,mdb,open-data,r,wash,water},
-#>     version = {0.0.1},
+#>     version = {0.0.2},
 #>   }
 ```
 
