@@ -32,16 +32,11 @@ the file to hide it.
 - The license is CC BY 4.0. Do not change it.
 - Missing values are coded as `NA`, never as empty strings, “NULL”,
   “N/A”, or sentinel numbers such as -99.
-- After editing DESCRIPTION, run `washr::update_description()`. Caveat
-  (washr 1.0.1): it strips `Config/Needs/website` entries; diff
-  DESCRIPTION after the call and restore anything it removed.
+- After editing DESCRIPTION, run `washr::update_description()`.
 - After version or author changes, run `washr::update_citation()` so
-  DESCRIPTION, CITATION.cff, and inst/CITATION stay in sync. Caveats
-  (washr 1.0.1): the `doi` argument is required, so call it with the
-  package DOI or `doi = NULL` before a DOI exists; with `doi = NULL` it
-  can inject a broken empty badge (`zenodo.org/badge/DOI/.svg`) into
-  README.Rmd, which must be removed; and it leaves `inst/CITATION.bk1`
-  backup files that must not be committed.
+  DESCRIPTION, CITATION.cff, and inst/CITATION stay in sync. It keeps a
+  DOI already on file and owns the DOI badge in README.Rmd. washr 1.1.0
+  or newer is the floor for these calls.
 - Raw data stays in `data-raw/`, processed `.rda` data in `data/`, and
   CSV/XLSX exports in `inst/extdata/`. `data-raw/dictionary.csv`
   documents all variables.

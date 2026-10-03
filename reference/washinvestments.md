@@ -1,7 +1,7 @@
 # Multilateral development banks investment behaviour in water and sanitation
 
 Data set on multilateral development bank (MDB) investment in water
-supply and sanitation: 1,873 project records of the World Bank, the
+supply and sanitation: 1,872 project records of the World Bank, the
 African Development Bank and the Asian Development Bank, approved
 between 1963 and 2020, compiled to assess territorial trends, technology
 choices, distribution of financial burdens, and reforms to institutional
@@ -15,7 +15,7 @@ washinvestments
 
 ## Format
 
-A tibble with 1873 rows and 52 variables
+A tibble with 1872 rows and 52 variables
 
 - id:
 
