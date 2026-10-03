@@ -8,7 +8,7 @@ message: 'To cite package "washinvestments" in publications use:'
 type: dataset
 license: CC-BY-4.0
 title: 'washinvestments: Multilateral Development Bank Investment in Water and Sanitation'
-version: 0.0.1
+version: 0.0.2
 doi: 10.5281/zenodo.11203433
 abstract: 'Dataset on multilateral development bank (MDB) investment in water supply
   and sanitation: 1,872 project records of the World Bank, the African Development

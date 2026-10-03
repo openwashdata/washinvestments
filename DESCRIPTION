@@ -1,6 +1,6 @@
 Package: washinvestments
 Title: Multilateral Development Bank Investment in Water and Sanitation
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
     person("Margaux", "Götschmann", , "margauxg@ethz.ch", role = "aut",
            comment = c(ORCID = "0009-0002-2567-3343")),
